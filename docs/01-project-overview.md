@@ -21,4 +21,5 @@ The system includes student registration, profile management, attendance trackin
 * Improved record accuracy.  
 * Better decision-making through reports.  
 * Enhanced user experience for administrators and students.
+* ok
 
