@@ -1,0 +1,11 @@
+{
+  "name": "student-management-attendance-system",
+  "version": "1.0.0",
+  "description": "Student Management System - Attendance Management Module by Shawon Afrin Badhon (ID: 2222625)",
+  "author": "Shawon Afrin Badhon (Student ID: 2222625)",
+  "scripts": {
+    "frontend:dev": "cd frontend && npm run dev",
+    "frontend:build": "cd frontend && npm run build",
+    "backend:run": "cd backend && python run.py"
+  }
+}

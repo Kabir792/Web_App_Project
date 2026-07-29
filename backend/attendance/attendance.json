@@ -1,0 +1,47 @@
+[
+  {
+    "id": 8,
+    "studentId": "2222625",
+    "studentName": "Shawon Afrin Badhon",
+    "department": "Computer Science & Engineering",
+    "date": "2026-07-29",
+    "status": "Present",
+    "created_at": "2026-07-29T23:36:06.240705+00:00"
+  },
+  {
+    "id": 7,
+    "studentId": "2222626",
+    "studentName": "badhon",
+    "department": "Computer Science & Engineering",
+    "date": "2026-09-29",
+    "status": "Present",
+    "created_at": "2026-07-29T07:49:22.395280+00:00"
+  },
+  {
+    "id": 6,
+    "studentId": "2222625",
+    "studentName": "Shawon Afrin Badhon",
+    "department": "Computer Science & Engineering",
+    "date": "2026-08-29",
+    "status": "Present",
+    "created_at": "2026-07-29T07:42:29.252673+00:00"
+  },
+  {
+    "id": 1,
+    "studentId": "2220792",
+    "studentName": "Zahid Kabir Utsho",
+    "department": "Computer Science & Engineering",
+    "date": "2026-07-29",
+    "status": "Present",
+    "created_at": "2026-07-29T10:00:00Z"
+  },
+  {
+    "id": 2,
+    "studentId": "2222625",
+    "studentName": "Shawon Afrin Badhon",
+    "department": "Computer Science & Engineering",
+    "date": "2026-07-29",
+    "status": "Present",
+    "created_at": "2026-07-29T10:05:00Z"
+  }
+]
