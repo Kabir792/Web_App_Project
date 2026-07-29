@@ -125,13 +125,8 @@ curl -X DELETE http://127.0.0.1:5000/api/students/2220792
 
 ---
 
-## 🎓 Viva Voce Questions & Answers
+## Assessment 4
 
-### Q1: How did you implement Role-Based Access Control (RBAC)?
-**Answer**: Users are authenticated via `POST /api/auth/login` checking credentials in `backend/data/users.json`. The user role (`ADMIN` or `STUDENT`) is returned and stored in frontend state. Admin role unlocks full CRUD capabilities (Registration Form, Edit Modal, Delete Buttons), whereas Student role restricts access to view-only directory search.
+This branch contains the Student Registration end-to-end feature implementation.
 
-### Q2: Explain the Update (`PUT`) operation flow in your application.
-**Answer**: When an Admin clicks Edit on a student card, `StudentEditModal.jsx` opens with pre-filled student details. Submitting the modal triggers `updateStudent()` API calling `PUT /api/students/<student_id>`. The backend validates the inputs, updates the corresponding student object in `students.json`, and updates the frontend state reactively.
-
-### Q3: Explain the Delete (`DELETE`) operation flow.
-**Answer**: Clicking Delete triggers a safety confirmation prompt. Upon user confirmation, `deleteStudent()` API sends a `DELETE /api/students/<student_id>` request. The backend filters out the record from `students.json` inside a thread-safe `FILE_LOCK` context and returns a success response. The frontend updates state to remove the student card smoothly.
+Issue: #17
