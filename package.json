@@ -1,0 +1,11 @@
+{
+  "name": "student-management-system",
+  "version": "1.0.0",
+  "description": "Student Management System - Student Registration Feature",
+  "author": "Zahid Kabir Utsho (Student ID: 2220792)",
+  "scripts": {
+    "frontend:dev": "cd frontend && npm run dev",
+    "frontend:build": "cd frontend && npm run build",
+    "backend:run": "cd backend && python run.py"
+  }
+}
