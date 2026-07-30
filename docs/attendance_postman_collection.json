@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "d4e5f6a7-b890-12cd-ef34-567890123456",
+		"name": "Attendance Management Module API - Shawon Afrin Badhon (2222625)",
+		"description": "API Test Suite for Independent Attendance Management Module by Shawon Afrin Badhon (ID: 2222625)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1. Get All Attendance & Metrics",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5002/api/attendance",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5002",
+					"path": [
+						"api",
+						"attendance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2. Mark Attendance (POST)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"studentId\": \"2220792\",\n    \"studentName\": \"Zahid Kabir Utsho\",\n    \"department\": \"Computer Science & Engineering\",\n    \"date\": \"2026-07-29\",\n    \"status\": \"Present\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5002/api/attendance",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5002",
+					"path": [
+						"api",
+						"attendance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3. Search Attendance (/search)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5002/api/attendance/search?query=Zahid",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5002",
+					"path": [
+						"api",
+						"attendance",
+						"search"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "Zahid"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4. Edit Attendance (PUT)",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"studentId\": \"2220792\",\n    \"studentName\": \"Zahid Kabir Utsho\",\n    \"department\": \"Computer Science & Engineering\",\n    \"date\": \"2026-07-29\",\n    \"status\": \"Late\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5002/api/attendance/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5002",
+					"path": [
+						"api",
+						"attendance",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5. Delete Attendance (DELETE)",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5002/api/attendance/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5002",
+					"path": [
+						"api",
+						"attendance",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
