@@ -1,0 +1,364 @@
+/* ==========================================================================
+   Attendance Management Module - Design System Styles
+   Developer: Shawon Afrin Badhon (Student ID: 2222625)
+   ========================================================================== */
+
+:root {
+  --att-primary: #0b0f19;
+  --att-secondary: #0f172a;
+  --att-card-bg: rgba(15, 23, 42, 0.85);
+  --att-input-bg: rgba(30, 41, 59, 0.65);
+  
+  --att-accent: #10b981;
+  --att-accent-glow: rgba(16, 185, 129, 0.35);
+  --att-blue: #3b82f6;
+  --att-amber: #f59e0b;
+  --att-red: #ef4444;
+  
+  --att-text-main: #f8fafc;
+  --att-text-muted: #94a3b8;
+  --att-text-dim: #64748b;
+  
+  --att-border: rgba(255, 255, 255, 0.1);
+  --att-border-glow: rgba(16, 185, 129, 0.4);
+  
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-pill: 9999px;
+  
+  --shadow-card: 0 20px 45px -15px rgba(0, 0, 0, 0.6), 0 0 20px rgba(16, 185, 129, 0.15);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.attendance-app-layout {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--att-primary);
+  color: var(--att-text-main);
+  min-height: 100vh;
+  line-height: 1.6;
+  background-image:
+    radial-gradient(circle at 15% 15%, rgba(16, 185, 129, 0.12) 0%, transparent 45%),
+    radial-gradient(circle at 85% 85%, rgba(59, 130, 246, 0.1) 0%, transparent 45%);
+  background-attachment: fixed;
+  display: flex;
+}
+
+/* Sidebar Component */
+.sidebar-container {
+  width: 260px;
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(16px);
+  border-right: 1px solid var(--att-border);
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1rem;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--att-border);
+  margin-bottom: 1.5rem;
+}
+
+.sidebar-logo-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, var(--att-accent), #059669);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  box-shadow: 0 0 15px var(--att-accent-glow);
+}
+
+.sidebar-logo-text h2 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.sidebar-logo-text span {
+  font-size: 0.72rem;
+  color: var(--att-accent);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.8rem 1rem;
+  border-radius: var(--radius-md);
+  color: var(--att-text-muted);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.92rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.sidebar-link:hover,
+.sidebar-link.active {
+  background: rgba(16, 185, 129, 0.12);
+  color: var(--att-accent);
+  border-color: rgba(16, 185, 129, 0.3);
+}
+
+/* Navbar Component */
+.main-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.navbar-container {
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--att-border);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 90;
+}
+
+.navbar-title h1 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.navbar-user-chip {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--att-border);
+  padding: 0.45rem 1rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.85rem;
+}
+
+/* Page Layout & Dashboard Grid */
+.attendance-page-container {
+  padding: 2rem;
+  flex: 1;
+}
+
+.metrics-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.metric-card-box {
+  background: var(--att-card-bg);
+  border: 1px solid var(--att-border);
+  border-radius: var(--radius-md);
+  padding: 1.35rem;
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  box-shadow: var(--shadow-card);
+  transition: transform 0.25s ease;
+}
+
+.metric-card-box:hover {
+  transform: translateY(-3px);
+  border-color: var(--att-border-glow);
+}
+
+.metric-icon-wrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.metric-info label {
+  font-size: 0.8rem;
+  color: var(--att-text-dim);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.metric-info span {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #fff;
+  display: block;
+}
+
+/* Attendance Form Card */
+.att-form-card {
+  background: var(--att-card-bg);
+  border: 1px solid var(--att-border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow-card);
+}
+
+.att-form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.25rem;
+}
+
+.att-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.att-label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--att-text-main);
+}
+
+.att-input,
+.att-select {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  background: var(--att-input-bg);
+  border: 1px solid var(--att-border);
+  border-radius: var(--radius-md);
+  color: #fff;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.att-input:focus,
+.att-select:focus {
+  border-color: var(--att-accent);
+  box-shadow: 0 0 0 3px var(--att-accent-glow);
+}
+
+.btn-mark-submit {
+  padding: 0.85rem 1.5rem;
+  background: linear-gradient(135deg, var(--att-accent), #059669);
+  color: #fff;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+.btn-mark-submit:hover {
+  transform: translateY(-2px);
+}
+
+/* Attendance Table */
+.att-table-wrapper {
+  background: var(--att-card-bg);
+  border: 1px solid var(--att-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+
+.att-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.att-table th {
+  background: rgba(30, 41, 59, 0.8);
+  padding: 1rem 1.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--att-text-muted);
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--att-border);
+}
+
+.att-table td {
+  padding: 1rem 1.25rem;
+  font-size: 0.92rem;
+  border-bottom: 1px solid var(--att-border);
+}
+
+.att-table tr:last-child td {
+  border-bottom: none;
+}
+
+.att-table tr:hover td {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* Status Badges */
+.status-pill {
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.status-pill.Present {
+  background: rgba(16, 185, 129, 0.15);
+  color: #6ee7b7;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.status-pill.Absent {
+  background: rgba(239, 68, 68, 0.15);
+  color: #fca5a5;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.status-pill.Late {
+  background: rgba(245, 158, 11, 0.15);
+  color: #fcd34d;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+/* Spinner */
+.att-spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: attSpin 0.8s linear infinite;
+}
+
+@keyframes attSpin {
+  to { transform: rotate(360deg); }
+}
