@@ -1,0 +1,14 @@
+[
+  {
+    "user_id": "2220792",
+    "password": "admin123",
+    "name": "Zahid Kabir Utsho",
+    "role": "ADMIN"
+  },
+  {
+    "user_id": "2222625",
+    "password": "teacher123",
+    "name": "Shawon Afrin Badhon",
+    "role": "TEACHER"
+  }
+]

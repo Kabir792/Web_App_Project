@@ -1,0 +1,19 @@
+[
+  {
+    "student_id": "2220792",
+    "name": "Zahid Kabir Utsho",
+    "department": "Software Engineering",
+    "email": "2220792@iub.edu.bd",
+    "phone": "01704346137",
+    "created_at": "2026-07-26T10:00:00Z",
+    "updated_at": "2026-07-26T09:34:44.741446+00:00"
+  },
+  {
+    "student_id": "2222625",
+    "name": "Shawon Afrin Badhon",
+    "department": "Computer Science & Engineering",
+    "email": "2222625@iub.edu.bd",
+    "phone": "01865788000",
+    "created_at": "2026-07-26T09:42:03.064649+00:00"
+  }
+]
