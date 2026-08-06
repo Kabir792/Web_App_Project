@@ -5,11 +5,11 @@ A full-stack Student Management System with two modules built by a 2-person grou
 - **Student Registration** — Zahid Kabir Utsho (ID: 2220792)
 - **Attendance Management** — Shawon Afrin Badhon (ID: 2222625)
 
-Both modules now run as **one unified Flask backend + one React frontend**, sharing a single admin login.
+Both modules now run as **one unified FastAPI backend + one React frontend**, sharing a single admin login.
 
 ## Tech Stack
 
-- **Backend**: Python, Flask, Flask-CORS, JSON file storage
+- **Backend**: Python, FastAPI, Uvicorn, Pydantic, JSON file storage
 - **Frontend**: React 18, Vite, lucide-react
 
 ## Project Structure
@@ -17,13 +17,13 @@ Both modules now run as **one unified Flask backend + one React frontend**, shar
 ```
 student-management-system/
 ├── backend/
-│   ├── app.py                 # Flask app: registers all blueprints
+│   ├── app.py                 # FastAPI app: registers all routers
 │   ├── run.py                 # Entry point (http://127.0.0.1:5000)
-│   ├── routes/                # Student + Auth routes
+│   ├── routes/                # Student + Auth APIRouters
 │   ├── services/               # Student + Auth business logic
 │   ├── utils/                  # Validators
 │   ├── data/                   # students.json, users.json
-│   ├── attendance/             # Attendance blueprint, service, data
+│   ├── attendance/             # Attendance APIRouter, service, data
 │   └── tests/                  # Attendance service tests
 ├── frontend/
 │   ├── src/
