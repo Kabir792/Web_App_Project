@@ -1,0 +1,42 @@
+[
+  {
+    "id": "usr-1",
+    "student_id": "2220792",
+    "email": "utsho@iub.edu.bd",
+    "password": "password123",
+    "full_name": "Zahid Kabir Utsho",
+    "department": "SETS / CSE",
+    "role": "STUDENT",
+    "avatar_url": "https://api.dicebear.com/7.x/avataaars/svg?seed=Zahid"
+  },
+  {
+    "id": "usr-2",
+    "student_id": "2222625",
+    "email": "badhon@iub.edu.bd",
+    "password": "password123",
+    "full_name": "Shawon Afrin Badhon",
+    "department": "SETS / CSE",
+    "role": "STUDENT",
+    "avatar_url": "https://api.dicebear.com/7.x/avataaars/svg?seed=Badhon"
+  },
+  {
+    "id": "usr-3",
+    "student_id": "FAC-101",
+    "email": "mahady@iub.edu.bd",
+    "password": "admin123",
+    "full_name": "Dr. Mahady Hasan",
+    "department": "SETS / CSE",
+    "role": "FACULTY",
+    "avatar_url": "https://api.dicebear.com/7.x/avataaars/svg?seed=Mahady"
+  },
+  {
+    "id": "usr-1786017893677",
+    "student_id": "2222623",
+    "email": "mehedhi@iub.edu.bd",
+    "password": "2222623",
+    "full_name": "mehedhi",
+    "department": "SETS / CSE",
+    "role": "STUDENT",
+    "avatar_url": "https://api.dicebear.com/7.x/avataaars/svg?seed=2222623"
+  }
+]

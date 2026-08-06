@@ -1,0 +1,57 @@
+[
+  {
+    "id": "iub-loc-1",
+    "name": "IUB Main Academic Building",
+    "category": "academic",
+    "building_no": "Academic Building",
+    "latitude": 23.81512,
+    "longitude": 90.42555,
+    "description": "Houses School of Engineering, Technology & Sciences (SETS), Dept. of Computer Science & Engineering, Lecture Galleries, and Registrar Office.",
+    "floors": "Ground - 10th Floor",
+    "image_url": "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": "iub-loc-2",
+    "name": "IUB Central Library & Resource Hub",
+    "category": "library",
+    "building_no": "Library Tower",
+    "latitude": 23.81545,
+    "longitude": 90.42510,
+    "description": "Modern multi-story library featuring silent study zones, e-library stations, research archives, and discussion rooms.",
+    "floors": "3rd & 4th Floor",
+    "image_url": "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": "iub-loc-3",
+    "name": "SETS Computer & AI Robotics Labs",
+    "category": "lab",
+    "building_no": "Annex Level 5",
+    "latitude": 23.81485,
+    "longitude": 90.42600,
+    "description": "High-performance AI Lab, Software Engineering Studio, FabLab, Hardware Robotics Center, and Networking Labs.",
+    "floors": "5th Floor, SETS Block",
+    "image_url": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": "iub-loc-4",
+    "name": "IUB Central Cafeteria & Student Lounge",
+    "category": "canteen",
+    "building_no": "Plaza Ground Floor",
+    "latitude": 23.81570,
+    "longitude": 90.42580,
+    "description": "Spacious student food court offering fresh meals, coffee bar, juice counter, and open-air seating plaza.",
+    "floors": "Ground Level Plaza",
+    "image_url": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": "iub-loc-5",
+    "name": "IUB Multipurpose Auditorium",
+    "category": "auditorium",
+    "building_no": "Auditorium Block",
+    "latitude": 23.81460,
+    "longitude": 90.42520,
+    "description": "State-of-the-art 600-seat auditorium for university convocations, national hackathons, tech seminars, and cultural festivals.",
+    "floors": "Level 1 & 2",
+    "image_url": "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=600&q=80"
+  }
+]

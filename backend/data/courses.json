@@ -1,0 +1,29 @@
+[
+  {
+    "id": "crs-101",
+    "code": "CSE401",
+    "title": "Software Engineering & Architecture",
+    "instructor": "Dr. Ariful Islam",
+    "room": "Lab 402",
+    "schedule": "Sun/Tue 10:00 AM - 11:30 AM",
+    "color": "#6366f1"
+  },
+  {
+    "id": "crs-102",
+    "code": "CSE409",
+    "title": "Machine Learning & AI",
+    "instructor": "Prof. Farhana Nusrat",
+    "room": "Room 501",
+    "schedule": "Mon/Wed 11:30 AM - 01:00 PM",
+    "color": "#ec4899"
+  },
+  {
+    "id": "crs-103",
+    "code": "CSE415",
+    "title": "Distributed Systems & Cloud",
+    "instructor": "Engr. Tanvir Ahmed",
+    "room": "Lab 305",
+    "schedule": "Thu 09:00 AM - 12:00 PM",
+    "color": "#10b981"
+  }
+]

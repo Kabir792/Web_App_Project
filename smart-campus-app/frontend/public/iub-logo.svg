@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 140" width="500" height="140">
+  <defs>
+    <!-- IUB Navy & Gold Colors -->
+    <linearGradient id="navyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#002147" />
+      <stop offset="100%" stop-color="#003366" />
+    </linearGradient>
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4af37" />
+      <stop offset="100%" stop-color="#f3e5ab" />
+    </linearGradient>
+    <path id="textArcTop" d="M 20 70 A 50 50 0 0 1 120 70" />
+  </defs>
+
+  <!-- Official IUB Circular Seal Emblem -->
+  <g transform="translate(10, 10)">
+    <!-- Outer Navy Ring -->
+    <circle cx="60" cy="60" r="56" fill="url(#navyGrad)" stroke="#d4af37" stroke-width="3"/>
+    <circle cx="60" cy="60" r="47" fill="#ffffff" stroke="#002147" stroke-width="1.5"/>
+
+    <!-- Inner Seal Graphics -->
+    <circle cx="60" cy="60" r="36" fill="#002147"/>
+
+    <!-- Sun Rays & Globe Lines -->
+    <g fill="none" stroke="#d4af37" stroke-width="1" opacity="0.6">
+      <line x1="60" y1="26" x2="60" y2="40" />
+      <line x1="42" y1="32" x2="50" y2="42" />
+      <line x1="78" y1="32" x2="70" y2="42" />
+      <circle cx="60" cy="60" r="28" stroke-dasharray="2 2"/>
+    </g>
+
+    <!-- Open Book of Knowledge -->
+    <path d="M42 56 C50 52 57 55 60 58 C63 55 70 52 78 56 V76 C70 72 63 75 60 77 C57 75 50 72 42 76 Z" fill="#ffffff"/>
+    <path d="M42 56 C50 52 57 55 60 58 V77 C57 75 50 72 42 76 Z" fill="#f8fafc"/>
+    <line x1="60" y1="58" x2="60" y2="77" stroke="#002147" stroke-width="2"/>
+
+    <!-- Established 1993 Ribbon -->
+    <rect x="36" y="82" width="48" height="14" rx="3" fill="#d4af37"/>
+    <text x="60" y="93" font-family="'Inter', sans-serif" font-weight="900" font-size="9" fill="#002147" text-anchor="middle" letter-spacing="0.5">
+      1993
+    </text>
+  </g>
+
+  <!-- Official IUB Typography -->
+  <g transform="translate(140, 20)">
+    <!-- Main University Name -->
+    <text x="0" y="38" font-family="'Inter', system-ui, -apple-system, sans-serif" font-weight="900" font-size="28" fill="#002147" letter-spacing="0.5">
+      INDEPENDENT UNIVERSITY
+    </text>
+    
+    <!-- Subtitle BANGLADESH -->
+    <text x="0" y="66" font-family="'Inter', system-ui, -apple-system, sans-serif" font-weight="800" font-size="22" fill="#006633" letter-spacing="3">
+      BANGLADESH
+    </text>
+
+    <!-- University Motto -->
+    <text x="0" y="92" font-family="'Georgia', serif" font-style="italic" font-weight="600" font-size="14" fill="#d4af37" letter-spacing="1">
+      "Educating for Tomorrow's World"
+    </text>
+  </g>
+</svg>

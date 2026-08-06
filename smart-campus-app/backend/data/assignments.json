@@ -1,0 +1,14 @@
+[
+  {
+    "id": "asgn-3",
+    "course_id": "crs-103",
+    "course_code": "CSC415",
+    "title": "Dockerized Microservice Deployment on AWS",
+    "description": "Deploy 3 microservices with Nginx API gateway for the IUB student utility backend.",
+    "due_date": "2026-08-10T23:59:00",
+    "priority": "high",
+    "is_completed": true,
+    "sync_status": "synced",
+    "updated_at": "2026-08-06T12:00:00Z"
+  }
+]

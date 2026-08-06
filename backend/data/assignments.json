@@ -1,0 +1,38 @@
+[
+  {
+    "id": "asgn-1",
+    "course_id": "crs-101",
+    "course_code": "CSE401",
+    "title": "System Architecture & UML Diagrams",
+    "description": "Submit complete Sequence & Component diagrams for the Capstone Project.",
+    "due_date": "2026-08-15T23:59:00",
+    "priority": "high",
+    "is_completed": false,
+    "sync_status": "synced",
+    "updated_at": "2026-08-06T12:00:00Z"
+  },
+  {
+    "id": "asgn-2",
+    "course_id": "crs-102",
+    "course_code": "CSE409",
+    "title": "RAG Pipeline Benchmark Report",
+    "description": "Evaluate LlamaIndex vs LangChain performance on vector retrieval tasks.",
+    "due_date": "2026-08-20T18:00:00",
+    "priority": "medium",
+    "is_completed": false,
+    "sync_status": "synced",
+    "updated_at": "2026-08-06T12:00:00Z"
+  },
+  {
+    "id": "asgn-3",
+    "course_id": "crs-103",
+    "course_code": "CSE415",
+    "title": "Dockerized Microservice Deployment",
+    "description": "Deploy 3 microservices with Nginx API gateway on local Kubernetes / Docker Compose.",
+    "due_date": "2026-08-10T23:59:00",
+    "priority": "high",
+    "is_completed": true,
+    "sync_status": "synced",
+    "updated_at": "2026-08-06T12:00:00Z"
+  }
+]

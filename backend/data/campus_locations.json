@@ -1,0 +1,57 @@
+[
+  {
+    "id": "loc-1",
+    "name": "Main Academic Building",
+    "category": "academic",
+    "building_no": "Building A",
+    "latitude": 23.777172,
+    "longitude": 90.399452,
+    "description": "Houses CSE, EEE, and Civil Engineering Departments, Dean Office, and Central Lecture Halls.",
+    "floors": "1st - 8th Floor",
+    "image_url": "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": "loc-2",
+    "name": "Central Library & Resource Center",
+    "category": "library",
+    "building_no": "Building B",
+    "latitude": 23.777650,
+    "longitude": 90.398900,
+    "description": "3-story silent reading halls, digital e-library stations, discussion rooms, and journal archives.",
+    "floors": "Ground - 3rd Floor",
+    "image_url": "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": "loc-3",
+    "name": "Advanced Computer Science Labs",
+    "category": "lab",
+    "building_no": "Annex 1",
+    "latitude": 23.776800,
+    "longitude": 90.400100,
+    "description": "AI & Robotics Lab, Software Engineering Studio, Cybersecurity Center, and Networking Labs.",
+    "floors": "2nd & 3rd Floor",
+    "image_url": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": "loc-4",
+    "name": "Campus Central Canteen & Cafe",
+    "category": "canteen",
+    "building_no": "Student Complex",
+    "latitude": 23.778100,
+    "longitude": 90.399900,
+    "description": "Food court offering snacks, lunch, tea/coffee bar, and open-air student lounge.",
+    "floors": "Ground Floor",
+    "image_url": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": "loc-5",
+    "name": "Multipurpose Auditorium",
+    "category": "auditorium",
+    "building_no": "Building C",
+    "latitude": 23.776300,
+    "longitude": 90.399000,
+    "description": "800-seat hall for university seminars, cultural events, hackathons, and convocation rehearsals.",
+    "floors": "Ground & 1st Floor",
+    "image_url": "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=600&q=80"
+  }
+]
