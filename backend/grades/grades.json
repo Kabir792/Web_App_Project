@@ -1,0 +1,74 @@
+[
+  {
+    "id": "grd-3c7911",
+    "student_id": "2220792",
+    "student_name": "Zahid Kabir Utsho",
+    "course_code": "MAT301",
+    "course_title": "Ordinary Diff Equatio",
+    "credit_hours": 3,
+    "marks": 85.0,
+    "grade_letter": "A-",
+    "grade_point": 3.7,
+    "semester": "Spring 2026"
+  },
+  {
+    "id": "grd-21627b",
+    "student_id": "2220792",
+    "student_name": "Zahid Kabir Utsho",
+    "course_code": "CSE309",
+    "course_title": "Web Application",
+    "credit_hours": 3,
+    "marks": 78.0,
+    "grade_letter": "B",
+    "grade_point": 3.0,
+    "semester": "Spring 2026"
+  },
+  {
+    "id": "grd-9fd88a",
+    "student_id": "2222625",
+    "student_name": "Shawon Afrin Badhon",
+    "course_code": "CSE309",
+    "course_title": "Web Application",
+    "credit_hours": 3,
+    "marks": 85.0,
+    "grade_letter": "A-",
+    "grade_point": 3.7,
+    "semester": "Spring 2026"
+  },
+  {
+    "id": "grd-ed5f22",
+    "student_id": "2222625",
+    "student_name": "Shawon Afrin Badhon",
+    "course_code": "MGT340",
+    "course_title": "Introduction to Management",
+    "credit_hours": 3,
+    "marks": 90.0,
+    "grade_letter": "A",
+    "grade_point": 4.0,
+    "semester": "Spring 2026"
+  },
+  {
+    "id": "grd-dd20ae",
+    "student_id": "234567",
+    "student_name": "Sabbir",
+    "course_code": "ENG102",
+    "course_title": "Communication ",
+    "credit_hours": 3,
+    "marks": 80.0,
+    "grade_letter": "B+",
+    "grade_point": 3.3,
+    "semester": "Spring 2026"
+  },
+  {
+    "id": "grd-6cf47d",
+    "student_id": "234567",
+    "student_name": "Sabbir",
+    "course_code": "CSE401",
+    "course_title": "Softwere Eng",
+    "credit_hours": 3,
+    "marks": 85.0,
+    "grade_letter": "A-",
+    "grade_point": 3.7,
+    "semester": "Spring 2026"
+  }
+]
