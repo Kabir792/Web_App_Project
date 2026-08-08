@@ -1,0 +1,43 @@
+[
+  {
+    "student_id": "2220792",
+    "name": "Zahid Kabir Utsho",
+    "department": "Software Engineering",
+    "email": "2220792@iub.edu.bd",
+    "phone": "01704346138",
+    "created_at": "2026-07-26T10:00:00Z",
+    "updated_at": "2026-08-07T22:28:55.114899+00:00"
+  },
+  {
+    "student_id": "2222625",
+    "name": "Shawon Afrin Badhon",
+    "department": "Computer Science & Engineering",
+    "email": "2222625@iub.edu.bd",
+    "phone": "01865788000",
+    "created_at": "2026-07-26T09:42:03.064649+00:00"
+  },
+  {
+    "student_id": "2229999",
+    "name": "Test Student",
+    "department": "Computer Science",
+    "email": "test@example.com",
+    "phone": "01700000000",
+    "created_at": "2026-08-07T22:15:23.228020+00:00"
+  },
+  {
+    "student_id": "2222909",
+    "name": "Abrar Sakil",
+    "department": "Information Technology",
+    "email": "2222909@iub.edu.bd",
+    "phone": "01989066569",
+    "created_at": "2026-08-08T10:05:18.963306+00:00"
+  },
+  {
+    "student_id": "234567",
+    "name": "Sabbir",
+    "department": "Mechanical Engineering",
+    "email": "234567@iub.edu.bd",
+    "phone": "01989660987",
+    "created_at": "2026-08-08T10:13:33.323698+00:00"
+  }
+]
