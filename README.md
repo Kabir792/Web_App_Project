@@ -4,6 +4,15 @@ A full-stack Web Application built with **Python FastAPI** and **React 18 + Vite
 
 ---
 
+## 🌐 Live Application Deployment
+
+| Service | Host Platform | Live Production URL | Status |
+| :--- | :--- | :--- | :--- |
+| **Frontend Web App** | **Vercel** | [https://web-app-project-l3x5.vercel.app/](https://web-app-project-l3x5.vercel.app/) | ✅ **Online** |
+| **Backend REST API** | **Render** | [https://web-app-project-53um.onrender.com/](https://web-app-project-53um.onrender.com/) | ✅ **Online** |
+
+---
+
 ## 👥 Group Project Contribution & Work Division
 
 | Member Name | Student ID | Designated Modules & Features |
@@ -42,8 +51,9 @@ A full-stack Web Application built with **Python FastAPI** and **React 18 + Vite
 
 ## 🛠️ Tech Stack
 
-- **Backend**: Python 3.10+, FastAPI, Uvicorn, Pydantic, JSON Database storage
+- **Backend**: Python 3.11, FastAPI, Uvicorn, Gunicorn, Pydantic, JSON Database storage
 - **Frontend**: React 18, Vite 5, Lucide Icons, Vanilla CSS Design Tokens
+- **Cloud Hosting**: Vercel (Frontend) & Render (Backend)
 - **Repo & Versioning**: Git / GitHub (`https://github.com/Kabir792/Web_App_Project.git`)
 
 ---
@@ -52,6 +62,7 @@ A full-stack Web Application built with **Python FastAPI** and **React 18 + Vite
 
 ```
 student-management-system/
+├── app.py                     # Root ASGI app wrapper for Render deployment
 ├── backend/
 │   ├── app.py                 # Unified FastAPI App (APIRouters registration)
 │   ├── run.py                 # Backend Entry Point (http://127.0.0.1:5000)
@@ -69,13 +80,16 @@ student-management-system/
 │   │   └── modules/
 │   │       ├── attendance/      # Attendance Portal UI
 │   │       └── grades/          # GradeManagement UI & Search
+│   ├── vercel.json             # Vercel SPA Routing configuration
 │   └── vite.config.js
+├── render.yaml                # Render Blueprint Deployment Specification
+├── vercel.json                # Root Vercel deployment spec
 └── README.md
 ```
 
 ---
 
-## 🚀 Setup & Execution Guide
+## 🚀 Local Setup & Execution Guide
 
 ### 1. Backend Setup (FastAPI)
 
