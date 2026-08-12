@@ -3,22 +3,35 @@
  * Handles async REST requests to the FastAPI Backend.
  */
 
-const BACKEND_BASE = 'http://127.0.0.1:5000/api';
+const getApiBaseUrl = () => {
+  const envUrl = import.meta.env.VITE_API_BASE_URL;
+  if (envUrl) {
+    const cleanUrl = envUrl.replace(/\/+$/, '');
+    return cleanUrl.endsWith('/api') ? cleanUrl : `${cleanUrl}/api`;
+  }
+  return 'http://127.0.0.1:5000/api';
+};
+
+export const BACKEND_BASE = getApiBaseUrl();
 
 async function fetchWithFallback(urlPath, options = {}) {
+  const targetUrl = urlPath.startsWith('/api')
+    ? BACKEND_BASE + urlPath.substring(4)
+    : (urlPath.startsWith('/') ? BACKEND_BASE + urlPath : `${BACKEND_BASE}/${urlPath}`);
+
   try {
-    const res = await fetch(urlPath, options);
+    const res = await fetch(targetUrl, options);
     if (res.ok) return await res.json();
     const data = await res.json();
     return data;
   } catch (err1) {
     try {
-      const fullUrl = urlPath.replace('/api', BACKEND_BASE);
-      const res2 = await fetch(fullUrl, options);
+      // Fallback try relative path
+      const res2 = await fetch(urlPath, options);
       return await res2.json();
     } catch (err2) {
       console.error('API Fetch Error:', err2);
-      return { success: false, message: 'Could not connect to FastAPI backend server (Port 5000).' };
+      return { success: false, message: 'Could not connect to backend server.' };
     }
   }
 }

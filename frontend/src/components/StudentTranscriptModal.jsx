@@ -2,6 +2,15 @@ import React, { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { Printer, X } from 'lucide-react';
 
+const getApiBaseUrl = () => {
+  const envUrl = import.meta.env.VITE_API_BASE_URL;
+  if (envUrl) {
+    const cleanUrl = envUrl.replace(/\/+$/, '');
+    return cleanUrl.endsWith('/api') ? cleanUrl : `${cleanUrl}/api`;
+  }
+  return 'http://127.0.0.1:5000/api';
+};
+
 export default function StudentTranscriptModal({ studentId, onClose }) {
   const [report, setReport] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -14,7 +23,8 @@ export default function StudentTranscriptModal({ studentId, onClose }) {
       setLoading(true);
       setError('');
       try {
-        const res = await fetch(`http://127.0.0.1:5000/api/reports/student/${studentId}`);
+        const baseUrl = getApiBaseUrl();
+        const res = await fetch(`${baseUrl}/reports/student/${studentId}`);
         const data = await res.json();
         if (data.success) {
           setReport(data);

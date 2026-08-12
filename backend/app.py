@@ -37,6 +37,19 @@ def create_app() -> FastAPI:
     app.include_router(grade_router)
     app.include_router(report_router)
 
+    @app.get("/")
+    async def root():
+        return {
+            "status": "online",
+            "service": "Student Management System API",
+            "version": "1.0.0",
+            "docs": "/docs"
+        }
+
+    @app.get("/health")
+    async def health_check():
+        return {"status": "healthy"}
+
     @app.exception_handler(404)
     async def not_found(request: Request, exc):
         return JSONResponse(

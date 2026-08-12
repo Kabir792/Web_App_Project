@@ -3,7 +3,16 @@ import { Award, Plus, Trash2, BookOpen, Calculator, Search, ArrowLeft, Printer, 
 import StudentTranscriptModal from '../../components/StudentTranscriptModal';
 import { fetchStudents } from '../../services/api';
 
-const API_URL = 'http://127.0.0.1:5000/api/grades';
+const getGradesApiUrl = () => {
+  const envUrl = import.meta.env.VITE_API_BASE_URL;
+  if (envUrl) {
+    const cleanUrl = envUrl.replace(/\/+$/, '');
+    return cleanUrl.endsWith('/api') ? `${cleanUrl}/grades` : `${cleanUrl}/api/grades`;
+  }
+  return 'http://127.0.0.1:5000/api/grades';
+};
+
+const API_URL = getGradesApiUrl();
 
 export default function GradeManagement({ user, onLogout, onSwitchModule }) {
   const [grades, setGrades] = useState([]);
